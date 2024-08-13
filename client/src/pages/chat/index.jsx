@@ -1,5 +1,5 @@
 
-function Chat() {
+const Chat = () => {
   return (
     <div>chat</div>
   )

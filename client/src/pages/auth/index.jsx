@@ -1,5 +1,5 @@
  
- function Auth() {
+const Auth = () => {
    return (
      <div>auth</div>
    )
