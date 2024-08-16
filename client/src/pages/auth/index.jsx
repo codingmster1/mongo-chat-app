@@ -1,4 +1,7 @@
- 
+ import { TabsContent } from "@radix-ui/react-tabs";
+import Background from "../../assets/login2.png";
+ import Victory from "../../assets/robot_logo.png";
+
 const Auth = () => {
    return (
      <div className="h-[100vh] w-[100vw] flex items-center justify-center">
@@ -7,12 +10,24 @@ const Auth = () => {
     <div className="flex items-center justify-center flex-col">
 <div className="flex items-center justify-center">
     <h1 className="text-5xl font-bold med:text-6xl">Welcome</h1>
+    <img src={Victory} alt="" className="h-[100px]"/>
+    <p className="font-medium text-center">Fill in the details to get started</p>
+</div>
+<div className="flex items-center justify-center w-full">
+<Tabs>
+    <TabsList>
+        <TabsTrigger value="login"></TabsTrigger>
+        <TabsTrigger value="signup"></TabsTrigger>
+    </TabsList>
+    <TabsContent value="login"></TabsContent>
+    <TabsContent value="signup"></TabsContent>
+</Tabs>
 </div>
     </div>
 </div>
-        </div>
      </div>
-   )
+     </div>
+   );
  }
  
  export default Auth
