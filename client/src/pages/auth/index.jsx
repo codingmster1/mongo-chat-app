@@ -3,6 +3,7 @@ import Background from "../../assets/login2.png";
  import Victory from "../../assets/robot_logo.png";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Auth = () => {
 
@@ -56,6 +57,9 @@ className="rounded-full p-6"
 value={password}
 onChange={(e) => setPassword(e.target.value)}
 />
+<Button
+className="rounded-full p-6" onClick={handleLogin}
+>Login</Button>
     </TabsContent>
     <TabsContent className="flex flex-col gap-5" value="signup">
     <Input
@@ -79,6 +83,9 @@ className="rounded-full p-6"
 value={confirmPassword}
 onChange={(e) => setConfirmPassword(e.target.value)}
 />
+<Button
+className="rounded-full p-6" onClick={handleSignup}
+>Sign Up</Button>
     </TabsContent>
 </Tabs>
 </div>
