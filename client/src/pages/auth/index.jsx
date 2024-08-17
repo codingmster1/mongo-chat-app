@@ -44,14 +44,14 @@ const Auth = () => {
     </TabsList>
     <TabsContent className="flex flex-col gap-5 mt-10" value="login">
 <Input
-placeholder="email"
+placeholder="Email"
 type="email"
 className="rounded-full p-6"
 value={email}
 onChange={(e) => setEmail(e.target.value)}
 />
 <Input
-placeholder="password"
+placeholder="Password"
 type="password"
 className="rounded-full p-6"
 value={password}
@@ -63,14 +63,14 @@ className="rounded-full p-6" onClick={handleLogin}
     </TabsContent>
     <TabsContent className="flex flex-col gap-5" value="signup">
     <Input
-placeholder="email"
+placeholder="Email"
 type="email"
 className="rounded-full p-6"
 value={email}
 onChange={(e) => setEmail(e.target.value)}
 />
 <Input
-placeholder="password"
+placeholder="Password"
 type="password"
 className="rounded-full p-6"
 value={password}
