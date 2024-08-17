@@ -2,6 +2,7 @@
 import Background from "../../assets/login2.png";
  import Victory from "../../assets/robot_logo.png";
 import { useState } from "react";
+import { Input } from "@/components/ui/input";
 
 const Auth = () => {
 
@@ -34,8 +35,45 @@ const Auth = () => {
        rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300"
         >Sign Up</TabsTrigger>
     </TabsList>
-    <TabsContent value="login"></TabsContent>
-    <TabsContent value="signup"></TabsContent>
+    <TabsContent className="flex flex-col gap-5 mt-10" value="login">
+<Input
+placeholder="email"
+type="email"
+className="rounded-full p-6"
+value={email}
+onChange={(e) => setEmail(e.target.value)}
+/>
+<Input
+placeholder="password"
+type="password"
+className="rounded-full p-6"
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+/>
+    </TabsContent>
+    <TabsContent className="flex flex-col gap-5" value="signup">
+    <Input
+placeholder="email"
+type="email"
+className="rounded-full p-6"
+value={email}
+onChange={(e) => setEmail(e.target.value)}
+/>
+<Input
+placeholder="password"
+type="password"
+className="rounded-full p-6"
+value={password}
+onChange={(e) => setPassword(e.target.value)}
+/>
+<Input
+placeholder="Confirm Password"
+type="password"
+className="rounded-full p-6"
+value={confirmPassword}
+onChange={(e) => setConfirmPassword(e.target.value)}
+/>
+    </TabsContent>
 </Tabs>
 </div>
     </div>
