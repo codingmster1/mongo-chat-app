@@ -1,5 +1,5 @@
  import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
-import Background from "../../assets/login2.png";
+import Background from "../../assets/girl-login.png";
  import Victory from "../../assets/robot_logo.png";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
@@ -25,7 +25,7 @@ const Auth = () => {
 <div className="flex items-center justify-center">
     <h1 className="text-5xl font-bold med:text-6xl">Welcome</h1>
     <img src={Victory} alt="" className="h-[100px]"/>
-    <p className="font-medium text-center">Fill in the details to get started</p>
+    <p className="font-medium text-center">Fill in your details to get started</p>
 </div>
 <div className="flex items-center justify-center w-full">
 <Tabs className="w-3/4">
@@ -89,6 +89,9 @@ className="rounded-full p-6" onClick={handleSignup}
     </TabsContent>
 </Tabs>
 </div>
+    </div>
+    <div className="flex justify-center items-center">
+<img src={Background} alt="background img"className="h-[300px]"/>
     </div>
 </div>
      </div>
