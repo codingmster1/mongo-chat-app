@@ -25,7 +25,7 @@ const Auth = () => {
 <div className="flex items-center justify-center">
     <h1 className="text-5xl font-bold med:text-6xl">Welcome</h1>
     <img src={Victory} alt="" className="h-[100px]"/>
-    <p className="font-medium text-center">Fill in your details to get started</p>
+    <p className="font-medium text-center">Get Started</p>
 </div>
 <div className="flex items-center justify-center w-full">
 <Tabs className="w-3/4">
