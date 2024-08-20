@@ -26,5 +26,5 @@ const server = app.listen(port, () => {
 
 
 mongoose.connect(databaseURL)
-    .then(() => console.log('Connected to database'))
-    .catch((error) => console.log(error));
+    .then(() => console.log('DB connection successful!'))
+    .catch((err) => console.log(err.message));
